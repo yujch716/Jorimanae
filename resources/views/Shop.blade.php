@@ -50,7 +50,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="breadcrumb__text2">
+                <div class="breadcrumb__text" style="color: black">
                     <h2>Shop</h2>
                     <br><br>
                 </div>
