@@ -94,11 +94,15 @@ textarea:focus {
 	outline: none;
 }
 
+a:link{
+    color: black;
+}
+
 a:hover,
 a:focus {
 	text-decoration: none;
 	outline: none;
-	color: #ffffff;
+	color: #6c757d;
 }
 
 ul,
@@ -2124,7 +2128,7 @@ ol {
 	border: 1px solid #ebebeb;
 	padding-left: 20px;
 	font-size: 16px;
-	color: #b2b2b2;
+	color: black;
 	border-radius: 4px;
 }
 
