@@ -46,7 +46,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__right">
                         <div class="header__top__right__auth">
-                            <a href="/SignIn"><i class="fa fa-user"></i> Login</a>
+                            <a href="/sign-in"><img src="img/icon/user.svg" alt=""> Login</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><h3>조리만해</h3></a>
+                    <a href="/"><h3>조리만해</h3></a>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -75,7 +75,7 @@
                                 </ul>
                             </li>
                             <li><a href="/blog_home">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         @elseif($menu == 'Shop')
                             <li><a href="/">Home</a></li>
                             <li class="active"><a href="/shop">Shop</a></li>
@@ -88,7 +88,7 @@
                                 </ul>
                             </li>
                             <li><a href="/blog_home">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         @elseif($menu == 'Blog')
                             <li><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
@@ -101,8 +101,8 @@
                                 </ul>
                             </li>
                             <li class="active"><a href="/blog_home">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        @elseif($menu == 'SignIn')
+                            <li><a href="/contact">Contact</a></li>
+                        @elseif($menu == 'Contact')
                             <li><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
                             <li><a href="#">Pages</a>
@@ -114,7 +114,20 @@
                                 </ul>
                             </li>
                             <li><a href="/blog_home">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li class="active"><a href="/contact">Contact</a></li>
+                        @elseif($menu == 'User')
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/shop">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/blog_home">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         @endif
                     </ul>
                 </nav>
@@ -123,7 +136,8 @@
                 <div class="header__cart">
                     <ul>
                         <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        <li><a href="/shopping-cart"><img src="img/icon/cart.svg" alt=""></i> <span>3</span></a></li>
+                        <li><a href="#"><img src="img/icon/delivery.svg" alt=""></i> <span>2</span></a></li>
                     </ul>
                     <div class="header__cart__price">item: <span>$150.00</span></div>
                 </div>

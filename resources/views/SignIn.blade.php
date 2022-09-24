@@ -22,7 +22,7 @@
                             <button type="submit" class="site-btn">로그인</button>
                         </form>
                         <br>
-                        <p style="text-align: right"><a href="#" style="font-weight: 700; ">회원가입</a></p>
+                        <p style="text-align: right"><a href="/sign-up" style="font-weight: 700; ">회원가입</a></p>
                         <div> </div>
                     </div>
                 </div>

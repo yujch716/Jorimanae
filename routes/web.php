@@ -25,6 +25,19 @@ Route::get('/blog_home', function () {
     return view('Blog',['menu'=>'Blog']);
 });
 
-Route::get('/SignIn', function () {
-    return view('SignIn',['menu'=>'SignIn']);
+Route::get('/contact', function () {
+    return view('Contact',['menu'=>'Contact']);
 });
+
+Route::get('/sign-in', function () {
+    return view('SignIn',['menu'=>'User']);
+});
+
+Route::get('/sign-up', function () {
+    return view('SignUp',['menu'=>'User']);
+});
+
+Route::get('/shopping-cart', function () {
+    return view('ShoppingCart',['menu'=>'User']);
+});
+
