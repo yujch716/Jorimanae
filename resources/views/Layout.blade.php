@@ -66,6 +66,7 @@
                         @if($menu == 'Home')
                             <li class="active"><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
+                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -74,11 +75,11 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="/contact">Contact</a></li>
                         @elseif($menu == 'Shop')
                             <li><a href="/">Home</a></li>
                             <li class="active"><a href="/shop">Shop</a></li>
+                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -87,24 +88,23 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="/contact">Contact</a></li>
                         @elseif($menu == 'Blog')
                             <li><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
-                            <li><a href="#">Pages</a>
+                            <li class="active"><a href="/blog_home">Blog</a></li>
+                            <li><a href="#">MyPage</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="#">내정보</a></li>
+                                    <li><a href="#">내블로그</a></li>
+                                    <li><a href="#">내포인트</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="/blog_home">Blog</a></li>
                             <li><a href="/contact">Contact</a></li>
                         @elseif($menu == 'Contact')
                             <li><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
+                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -113,11 +113,11 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/blog_home">Blog</a></li>
                             <li class="active"><a href="/contact">Contact</a></li>
                         @elseif($menu == 'User')
                             <li><a href="/">Home</a></li>
                             <li><a href="/shop">Shop</a></li>
+                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
@@ -126,7 +126,6 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/blog_home">Blog</a></li>
                             <li><a href="/contact">Contact</a></li>
                         @endif
                     </ul>
