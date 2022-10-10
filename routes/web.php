@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/***** view *****/
 Route::get('/', function () {
     return view('index',['menu'=>'Home']);
 });
@@ -41,3 +43,6 @@ Route::get('/shopping-cart', function () {
     return view('ShoppingCart',['menu'=>'User']);
 });
 
+
+/***** function *****/
+Route::post('/join', [UserController::class,'SignUp']);
